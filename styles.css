@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'playfair Display', serif;
+  }
+  
+  
+  /* BANNER */
+  
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 1px solid darkslateblue;
+    background-color: darkslateblue;
+    color: sandybrown;
+    height: 80px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 2;
+  }
+  
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    list-style-type: none;
+    padding-right: 5px;
+  }
+  
+  .nav li {
+    margin-left: 10px;
+  }
+  
+  a:hover {
+    color: rgb(253, 188, 132);
+    text-decoration: underline;
+  }
+  
+  .logo {
+    flex-wrap: no-wrap;
+    font-size: 50px;
+    width: 50%;
+    margin-left: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: sandybrown;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .nav {
+      display: none;
+    }
+  
+    .logo {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  
+  /* BACKGROUND */
+  
+  .background {
+    height: 550px;
+  }
+  
+  .background img {
+    width: 100%;
+    height: 550px;
+    background-image: cover;
+    position: absolute;
+  }
+  
+  .background .tagline {
+    border: 1px solid darkslateblue;
+    background: darkslateblue;
+    color: sandybrown;
+    position: relative;
+    text-align: center;
+    top: 225px;
+  }
+  
+  .background h2 {
+    font-size: 40px;
+  }
+  
+  .background p {
+    font-size: 30px;
+  }
+  
+  
+  /* SECTION SERVICES */
+  
+  .title {
+    text-align: center;
+    margin: 60px 0 50px;
+  }
+  
+  .services {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+  }
+  
+  .film, .property, .wedding, .production, .certification, .price {
+    max-height: 250px;
+    min-width: 230px;
+    width: 30%;
+    margin: 10px 0;
+    color: sandybrown;
+    background-color: darkslateblue;
+  }
+  
+  .film p {
+    margin: 20px 40px;
+  }
+  
+  .film h3 {
+    margin-top: 20px;
+  }
+  
+  .property p {
+    margin: 20px 40px;
+  }
+  
+  .property h3 {
+    margin-top: 20px;
+  }
+  
+  .wedding p {
+    margin: 20px 40px;
+  }
+  
+  .wedding h3 {
+    margin-top: 20px;
+  }
+  
+  .production p {
+    margin: 20px 40px;
+  }
+  
+  .production h3 {
+    margin-top: 20px;
+  }
+  
+  .certification p {
+    margin: 20px 40px;
+  }
+  
+  .certification h3 {
+    margin-top: 20px;
+  }
+  
+  .price p {
+    margin: 20px 40px;
+  }
+  
+  .price h3 {
+    margin-top: 20px;
+  }
+  
+  
+  /* PORTFOLIO */
+  
+  .project {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  
+  .project iframe {
+    width: 32.7%;
+    max-height: 250px;
+    min-width: 230px;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .project iframe {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  
+  /* CONTACT SECTION*/
+  
+  #contact {
+    display: flex;
+    flex-direction: row;
+    background-color: darkslateblue;
+    color: sandybrown;
+    width: 100%;
+    height: 500px;
+  }
+  
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 100px;
+  }
+  
+  .info p {
+    margin-top: 20px;
+  }
+  
+  .form {
+    height: 60%;
+    width: 100%;
+    margin-top: 100px;
+  }
+  
+  .form input, .form button {
+    border-radius: 20px;
+    height: 40px;
+  }
+  
+  .form input, .form textarea {
+    width: 50%;
+    margin-left: 100px;
+    margin-bottom: 30px;
+  }
+  
+  .form button {
+    width: 25%;
+    margin-left: 100px;
+    background-color: sandybrown;
+    color: darkslateblue;
+    font-weight: bold;
+    box-shadow: 1px 2px 2px black;
+    border-top: 1px solid white;
+    border-left: 1px solid white
+  }
+  
+  button:active {
+    text-shadow: 0.8px 0.8px black;
+    box-shadow: -1px -1px 1px white;
+  }
+  
+  button:hover {
+    background-color: rgb(248, 173, 107);
+    cursor: pointer;
+  }
+  
+  .name, .mail, .message {
+    width: 100%;
+  }
+  
+  input[type="text"], input[type="email"] {
+    padding: 10px;
+  }
+  
+  @media screen and (max-width: 800px) {
+    #contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 800px;
+    }
+  
+    .form input, .form textarea{
+      width: 80%;
+      margin-left: 50px;
+      margin-right: 50px; 
+    }
+  
+    .form button {
+      margin-left: 50px;
+    }
+  }
+  
+  Footer {
+    background-color: darkslateblue;
+    color: sandybrown;
+    text-align: center;
+    padding: 40px 0;
+    border-top: 1px solid sandybrown;
+  }
+  
+  footer h2, footer p {
+    margin-bottom: 10px;
+  }
+  
